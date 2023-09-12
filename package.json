@@ -1,0 +1,29 @@
+{
+  "name": "next-tailwindcss-defaulttheme",
+  "version": "1.0.3",
+  "description": "A ReactJS/NextJS supported customizable default theme using Tailwind CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asiflhr/next-tailwindcss-defaultTheme.git"
+  },
+  "keywords": [
+    "reactjs",
+    "nextjs",
+    "tailwindcss"
+  ],
+  "author": "@asiflhr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asiflhr/next-tailwindcss-defaultTheme/issues"
+  },
+  "homepage": "https://github.com/asiflhr/next-tailwindcss-defaultTheme#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3"
+  }
+}
