@@ -58,7 +58,7 @@ This library is under-deveopment, keep visiting for new updates...
 ## Contributing
 
 Contributions are always welcome!
-Contact for contributing to make this library awesome, and make available to help others
-Email: asif88383@gmail.com
+Contact for contributing to make this library awesome, and make available to help others.
+See `contributing.md` for ways to get started.
 
 ![App Screenshot](https://www.marham.pk/healthblog/wp-content/uploads/2018/01/help-1.jpg)
