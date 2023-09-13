@@ -1,0 +1,4 @@
+/* src/utilities/flex.css */
+.flex-center {
+  @apply flex items-center justify-center;
+}

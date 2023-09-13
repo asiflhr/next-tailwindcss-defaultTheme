@@ -5,53 +5,25 @@ A ReactJS/NextJS supported customizable default theme using Tailwind CSS.
 To use the package in another Next.js project after publishing to npms, you can follow these steps:
 
 ```bash
-  run npm i next-tailwindcss-defaultTheme
+  npm i next-tailwindcss-defaulttheme
 ```
 
-Import the default theme and plugins in your Next.js project. You can do this in the pages/\_app.js file:
+or
 
-```javascript
-import { defaultTheme, defaultPlugins } from 'next-tailwindcss-defaulttheme'
-
-export default function App({ Component, pageProps }) {
-  return (
-    <ThemeProvider theme={defaultTheme}>
-      <AppLayout>
-        <Component {...pageProps} />
-      </AppLayout>
-    </ThemeProvider>
-  )
-}
+```bash
+  yarn add next-tailwindcss-defaulttheme
 ```
 
-You don't need to install Tailwind CSS separately in the Next.js project. The package will automatically use the Tailwind CSS styles that are defined in the tailwind.config.js file.
+and use it by adding it to your tailwindcss.config.js plugins:
 
 ```javascript
-import Head from 'next/head'
-import Image from 'next/image'
-
-export default function Home() {
-  return (
-    <div className='bg-primary text-secondary'>
-      <Head>
-        <title>Next.js Tailwind CSS Default Theme</title>
-        <meta
-          name='description'
-          content='A boilerplate for Next.js projects using Tailwind CSS.'
-        />
-      </Head>
-      <main>
-        <h1 className='text-3xl font-bold'>
-          Next.js Tailwind CSS Default Theme
-        </h1>
-        <p>
-          This is a boilerplate for Next.js projects using Tailwind CSS. It
-          comes with a default theme that you can customize to your liking.
-        </p>
-        <Image src='/image.jpg' width={500} height={500} alt='Image' />
-      </main>
-    </div>
-  )
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {},
+  },
+  plugins: [require('next-tailwindcss-defaulttheme')],
 }
 ```
 
@@ -78,3 +50,15 @@ This project is used by the following companies:
 - [Infostack](https://www.infostacktech.com)
 - [Nexxt.ai](https://www.nexxt.ai)
 - [Visitlye](https://www.visitlye.com)
+
+## Related
+
+This library is under-deveopment, keep visiting for new updates...
+
+## Contributing
+
+Contributions are always welcome!
+Contact for contributing to make this library awesome, and make available to help others
+Email: asif88383@gmail.com
+
+![App Screenshot](https://www.marham.pk/healthblog/wp-content/uploads/2018/01/help-1.jpg)
